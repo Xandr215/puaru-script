@@ -1,7 +1,6 @@
 echo Starting PUARU script...
-sudo apt update || error 'Could not APT Update!'
-sudo apt autoremove || error 'Could not APT Autoremove!'
-sudo apt update || error 'Could not APT Update!'
-sudo apt full-upgrade || error 'Could not APT Full Upgrade!'
-sudo apt autoclean || error 'Could not APT Autoclean!'
+sudo apt-get autoremove || error 'Could not APT-Get Autoremove!'
+sudo apt-get update || error 'Could not APT-Get Update!'
+sudo apt-get upgrade || error 'Could not APT-Get Upgrade!'
+sudo apt-get autoclean || error 'Could not APT-Get Autoclean!'
 echo PUARU script finished! Now exiting... || exit 1
